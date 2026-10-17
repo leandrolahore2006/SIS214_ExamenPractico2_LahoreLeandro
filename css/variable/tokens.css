@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light;
+  --primary-color: #234c3b;
+  --primary-bright: #356b52;
+  --secondary-color: #a74632;
+  --bg-color: #f5f2ea;
+  --surface-color: #fffdf8;
+  --surface-raised: #ece8dd;
+  --text-color: #22291f;
+  --muted-color: #697066;
+  --border-color: #dedbd1;
+  --error-color: #a12635;
+  --font-family-base: "Segoe UI", system-ui, sans-serif;
+  --spacing-unit: 1rem;
+  --transition-speed: 0.25s ease;
+  --content-width: 72rem;
+  --shadow: 0 1.25rem 3.5rem rgb(0 0 0 / 22%);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --primary-color: #234c3b;
+  --primary-bright: #356b52;
+  --secondary-color: #a74632;
+  --bg-color: #f5f2ea;
+  --surface-color: #fffdf8;
+  --surface-raised: #ece8dd;
+  --text-color: #22291f;
+  --muted-color: #697066;
+  --border-color: #dedbd1;
+  --shadow: 0 1.25rem 3.5rem rgb(35 48 36 / 10%);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --primary-color: #8ab59a;
+  --primary-bright: #a7d0b5;
+  --secondary-color: #ed9279;
+  --bg-color: #17201b;
+  --surface-color: #202c25;
+  --surface-raised: #29382f;
+  --text-color: #f0efe7;
+  --muted-color: #b2b9ae;
+  --border-color: #39473d;
+  --error-color: #ff9ca6;
+  --shadow: 0 1.25rem 3.5rem rgb(0 0 0 / 24%);
+}
+

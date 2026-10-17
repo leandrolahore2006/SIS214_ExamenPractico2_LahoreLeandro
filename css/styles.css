@@ -1,0 +1,8 @@
+@import "variable/tokens.css?v=2";
+@import "base/reset.css?v=2";
+@import "layout/shell.css?v=2";
+@import "componentes/core.css?v=2";
+@import "layout/responsive.css?v=2";
+@import "estilo/theme.css?v=2";
+@import "layout/sections.css?v=2";
+@import "estilo/details.css?v=5";

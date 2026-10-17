@@ -1,0 +1,361 @@
+/* Editorial portfolio theme */
+html {
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background:
+    radial-gradient(ellipse at 90% 4%, rgb(200 90 66 / 8%), transparent 25rem),
+    var(--bg-color);
+  letter-spacing: 0.005em;
+}
+
+.main-header {
+  border-bottom-color: color-mix(in srgb, var(--border-color) 75%, transparent);
+  background: color-mix(in srgb, var(--bg-color) 92%, transparent);
+}
+
+.header-container {
+  min-height: 4.8rem;
+}
+
+.logo {
+  gap: 0.75rem;
+  font-size: 0.95rem;
+  letter-spacing: -0.025em;
+}
+
+.logo-mark {
+  border: 0;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: var(--bg-color);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.85rem;
+}
+
+.logo-name strong {
+  color: var(--text-color);
+}
+
+.btn-icon,
+.hamburger {
+  border-radius: 50%;
+  background: var(--surface-color);
+}
+
+.nav-menu a {
+  font-size: 0.79rem;
+  letter-spacing: 0.015em;
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus-visible {
+  color: var(--secondary-color);
+}
+
+.hero {
+  position: relative;
+  min-height: min(760px, calc(100svh - 4.8rem));
+  padding-block: clamp(4rem, 10vh, 7.5rem);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow,
+.section-index {
+  color: var(--secondary-color);
+  letter-spacing: 0.17em;
+}
+
+.hero h1 {
+  max-width: 13ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.15rem, 8vw, 6.4rem);
+  font-weight: 500;
+  letter-spacing: -0.065em;
+  line-height: 0.98;
+}
+
+.hero h1 span {
+  color: var(--primary-bright);
+  font-style: italic;
+}
+
+.hero-description {
+  max-width: 34rem;
+  margin-top: 1.65rem;
+  font-size: 1.07rem;
+  line-height: 1.8;
+}
+
+.btn-primary,
+.btn-secondary {
+  min-height: 3.15rem;
+  border-radius: 0.35rem;
+  font-size: 0.88rem;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background: var(--primary-bright);
+}
+
+.btn-secondary {
+  border-color: var(--border-color);
+  background: transparent;
+}
+
+.hero-meta {
+  gap: 0.55rem 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+.hero-meta li::before {
+  color: var(--secondary-color);
+}
+
+.profile-card {
+  position: relative;
+  overflow: hidden;
+  justify-self: stretch;
+  padding: 2rem;
+  border-color: var(--border-color);
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--primary-color) 8%, var(--surface-color)), var(--surface-color) 72%);
+  box-shadow: var(--shadow);
+}
+
+.profile-card::after {
+  position: absolute;
+  top: -4.2rem;
+  right: -3rem;
+  width: 11rem;
+  height: 11rem;
+  border: 1px solid color-mix(in srgb, var(--secondary-color) 35%, transparent);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+}
+
+.profile-avatar {
+  width: 7.25rem;
+  height: 7.25rem;
+  border: 0;
+  border-radius: 1.4rem;
+  background: var(--primary-color);
+  color: #fffdf8;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.profile-card h2,
+.content-section > h2,
+.section-heading-row h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.profile-card h2 {
+  font-size: 1.55rem;
+}
+
+.interest-list span {
+  border-radius: 0.2rem;
+  background: var(--surface-raised);
+  color: var(--primary-bright);
+}
+
+.profile-email {
+  color: var(--secondary-color);
+}
+
+.content-section {
+  padding-block: clamp(3.75rem, 8vw, 6.25rem);
+  border-top-color: var(--border-color);
+}
+
+.content-section > h2,
+.section-heading-row h2 {
+  margin-top: 0.55rem;
+  font-size: clamp(2rem, 5vw, 3.35rem);
+  line-height: 1.08;
+}
+
+.section-grid {
+  gap: 2rem;
+  margin-top: 1.8rem;
+}
+
+.prose {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.info-panel,
+.timeline-card,
+.experience-card,
+.skill-card,
+.course-card,
+.language-card,
+.card-project,
+.repo-card,
+.media-card {
+  border-radius: 0.4rem;
+  transition: border-color var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.info-panel,
+.timeline-card,
+.experience-card,
+.skill-card,
+.course-card,
+.language-card,
+.card-project,
+.repo-card {
+  background: var(--surface-color);
+}
+
+.info-panel {
+  border-left: 3px solid var(--secondary-color);
+  padding: 1.5rem;
+}
+
+.timeline-card {
+  border-left: 3px solid var(--primary-color);
+  padding: 1.6rem;
+}
+
+.experience-card,
+.course-card,
+.language-card,
+.skill-card,
+.card-project,
+.repo-card {
+  padding: 1.4rem;
+}
+
+.skill-card:hover,
+.card-project:hover,
+.repo-card:hover,
+.timeline-card:hover,
+.experience-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--primary-bright) 55%, var(--border-color));
+  box-shadow: var(--shadow);
+}
+
+.experience-number,
+.skill-icon,
+.course-symbol {
+  border: 0;
+  border-radius: 0.35rem;
+  background: var(--surface-raised);
+  color: var(--primary-bright);
+}
+
+.status-pill {
+  border-radius: 0.2rem;
+}
+
+.skill-icon {
+  color: var(--secondary-color);
+}
+
+.search-label {
+  margin-top: 1.8rem;
+}
+
+.search-input,
+.form-group input,
+.form-group textarea {
+  border-radius: 0.35rem;
+  background: var(--surface-color);
+}
+
+.project-category {
+  color: var(--secondary-color);
+}
+
+.badge {
+  border-radius: 0.2rem;
+  background: var(--surface-raised);
+}
+
+.repo-card a {
+  color: var(--secondary-color);
+}
+
+.code-window {
+  background:
+    radial-gradient(ellipse at 90% 20%, rgb(200 90 66 / 18%), transparent 45%),
+    var(--primary-color);
+}
+
+.layout-preview {
+  background: var(--primary-color);
+}
+
+.layout-preview span {
+  border-color: color-mix(in srgb, var(--bg-color) 25%, transparent);
+  background: linear-gradient(145deg, rgb(255 253 248 / 30%), rgb(200 90 66 / 25%));
+}
+
+.contact-section .section-heading-row {
+  align-items: flex-start;
+}
+
+.contact-form {
+  max-width: 54rem;
+  gap: 1.15rem;
+  padding: clamp(1.25rem, 4vw, 2.25rem);
+  border: 1px solid var(--border-color);
+  border-radius: 0.4rem;
+  background: var(--surface-color);
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.85rem 0.95rem;
+}
+
+.main-footer {
+  border-top-color: var(--border-color);
+}
+
+.main-footer a {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    gap: clamp(2.5rem, 6vw, 6rem);
+  }
+
+  .profile-card {
+    padding: 2.25rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .header-container {
+    gap: 1.4rem;
+  }
+
+  .nav-menu ul {
+    gap: 0.2rem 1rem;
+  }
+}
+
